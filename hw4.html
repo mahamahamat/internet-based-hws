@@ -1,0 +1,16 @@
+<input type="button" value="Click me" onclick="msg()">
+
+<form action="/action_page.php" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+/test/demo_form.php?name1=value1&name2=value2
+
+POST /test/demo_form.php HTTP/1.1
+Host: w3schools.com
+
+name1=value1&name2=value2
